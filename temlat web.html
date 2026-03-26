@@ -1,0 +1,531 @@
+
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Café Dirga premium</title>
+
+  <!-- Google Font (editable) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">Café Aurora</a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Buka menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <nav id="nav-menu" class="nav-menu">
+        <a href="#hero">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#location">Lokasi</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1 class="title">Selamat Datang di Café Aurora</h1>
+        <p class="subtitle">Sebuah pengalaman kopi & santap yang estetik — rasa autentik, suasana premium.</p>
+        <div class="hero-ctas">
+          <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+          <a href="#contact" class="btn btn-ghost">Hubungi</a>
+        </div>
+      </div>
+
+      <div class="hero-image" aria-hidden="true">
+        <!-- Ganti gambar sesuai selera -->
+        <img src="400&q=80&auto=format&fit=crop"
+             alt="Interior cafe estetik" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-inner">
+        <h2 class="section-title">Tentang Café Aurora</h2>
+        <p class="lead">Café Aurora menggabungkan keahlian kopi spesialti dengan sajian modern. Ruang kami dirancang untuk kenyamanan, estetika, dan ketenangan — cocok untuk santai, kerja, atau berkumpul.</p>
+        <ul class="features">
+          <li><strong>Biji kopi pilihan</strong> dari roastery lokal</li>
+          <li><strong>Menu musiman</strong> & bahan segar</li>
+          <li><strong>Suasana premium</strong> dengan layanan ramah</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Menu Unggulan</h2>
+
+      <div class="menu-grid">
+        <!-- Card 1 -->
+        <article class="menu-card">
+            
+
+      <img class="menu-img" src="https://www.recipetineats.com/green-ginger-rice-noodles/" alt="mie">
+          <div class="menu-body">
+            <h3 class="menu-name">Aurora Espresso</h3>
+            <p class="menu-desc">Single origin, shot espresso dengan crema sempurna.</p>
+            <div class="menu-meta">
+              <span class="price">Rp28.000</span>
+              <button class="btn btn-order" data-item="Aurora Espresso" aria-label="Pesan Aurora Espresso">Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="menu-card">
+          <img class="menu-img" src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=800&q=60&auto=format&fit=crop" alt="Latte seni">
+          <div class="menu-body">
+            <h3 class="menu-name">Latte Karamel</h3>
+            <p class="menu-desc">Smooth latte dengan sirup karamel house-made.</p>
+            <div class="menu-meta">
+              <span class="price">Rp32.000</span>
+              <button class="btn btn-order" data-item="Latte Karamel" aria-label="Pesan Latte Karamel">Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="menu-card">
+          <img class="menu-img" src="https://images.unsplash.com/photo-1521305916504-4a1121188589?w=800&q=60&auto=format&fit=crop" alt="Croissant">
+          <div class="menu-body">
+            <h3 class="menu-name">Croissant Butter</h3>
+            <p class="menu-desc">Flaky croissant dengan butter kaya rasa.</p>
+            <div class="menu-meta">
+              <span class="price">Rp22.000</span>
+              <button class="btn btn-order" data-item="Croissant Butter" aria-label="Pesan Croissant Butter">Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 (example) -->
+        <article class="menu-card">
+          <img class="menu-img" src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800&q=60&auto=format&fit=crop" alt="Salad">
+          <div class="menu-body">
+            <h3 class="menu-name">Salad Quinoa</h3>
+            <p class="menu-desc">Segar, sehat, pilihan vegetarian.</p>
+            <div class="menu-meta">
+              <span class="price">Rp35.000</span>
+              <button class="btn btn-order" data-item="Salad Quinoa" aria-label="Pesan Salad Quinoa">Order</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2 class="section-title">Galeri</h2>
+
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=60&auto=format&fit=crop" alt="Interior 1">
+        <img src="https://images.unsplash.com/photo-1526318472351-c75fcf070ee5?w=800&q=60&auto=format&fit=crop" alt="Interior 2">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=60&auto=format&fit=crop" alt="Interior 3">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=60&auto=format&fit=crop" alt="Coffee closeup">
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section id="location" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Lokasi</h2>
+      <p class="lead">Kunjungi kami — nyaman untuk hangout atau meeting santai. (Peta via Google Maps)</p>
+
+      <div class="map-wrap">
+        <!-- Ganti query pada src jika mau menampilkan alamat spesifik -->
+        <iframe
+          src="https://maps.google.com/maps?q=jakarta&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          aria-label="Peta lokasi Café Aurora"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container contact-grid">
+      <div>
+        <h2 class="section-title">Hubungi & Order</h2>
+        <p class="lead">Untuk pemesanan dan reservasi, hubungi kami melalui tombol WhatsApp atau kunjungi langsung.</p>
+
+        <p><strong>Jam buka:</strong> Senin–Minggu, 07:00–22:00</p>
+        <p><strong>Alamat:</strong> Jl. Contoh No. 10 (ubah sesuai lokasi)</p>
+
+        <!-- WhatsApp button (juga bisa dipicu dari tombol Order di menu) -->
+        <a id="whatsapp-button" class="btn btn-primary" href="#" target="_blank" rel="noopener">
+          Order via WhatsApp
+        </a>
+      </div>
+
+      <div class="contact-card">
+        <h3>Butuh bantuan?</h3>
+        <p>Kamu bisa pilih item dari menu lalu tekan <em>Order</em>. Pesan akan terbuka di WhatsApp dengan teks siap dikirim (nomor dapat diubah di file <code>script.js</code>).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Café Aurora — All rights reserved.</p>
+      <small>Design minimalis • Palette: hitam • putih • coklat kopi</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<style>
+    /* style.css
+   Minimalis modern — edit mudah via CSS variables
+*/
+
+:root{
+  --bg: #0b0b0b;            /* deep black */
+  --card: #0f0f0f;
+  --text: #f5f5f5;          /* off-white */
+  --muted: #bfb6ad;         /* coffee-beige */
+  --accent: #6b3b20;        /* coffee brown */
+  --accent-2: #8f5a3c;
+  --glass: rgba(255,255,255,0.04);
+
+  --container: 1100px;
+  --radius: 12px;
+  --transition: 250ms cubic-bezier(.2,.8,.2,1);
+}
+
+/* Reset & base */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:linear-gradient(180deg,#080808 0%, #0f0f0f 100%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+/* Layout container */
+.container{
+  width:90%;
+  max-width:var(--container);
+  margin:0 auto;
+}
+
+/* NAV */
+.nav{
+  backdrop-filter: blur(6px);
+  position:sticky;
+  top:0;
+  z-index:40;
+  background:linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.35));
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+.nav-inner{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  padding:1rem 0;
+}
+
+.brand{
+  font-weight:700;
+  color:var(--text);
+  text-decoration:none;
+  font-size:1.05rem;
+  letter-spacing:0.4px;
+}
+
+/* Nav menu - desktop */
+.nav-menu{
+  margin-left:auto;
+  display:flex;
+  gap:1.1rem;
+}
+.nav-menu a{
+  color:var(--muted);
+  text-decoration:none;
+  padding:8px 10px;
+  border-radius:8px;
+  font-weight:600;
+  transition:var(--transition);
+}
+.nav-menu a:hover{ color:var(--text); background:var(--glass) }
+
+/* Mobile toggle */
+.nav-toggle{
+  display:none;
+  background:none;
+  border:0;
+  margin-left:auto;
+  cursor:pointer;
+}
+.nav-toggle .bar{
+  display:block;
+  width:20px;
+  height:2px;
+  background:var(--text);
+  margin:4px 0;
+  transition:transform 200ms;
+}
+
+/* HERO */
+.hero{
+  padding:3.2rem 0;
+  overflow:hidden;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns: 1fr 520px;
+  gap:2rem;
+  align-items:center;
+}
+.hero-text .title{
+  font-size:2.05rem;
+  margin-bottom:0.5rem;
+  color:var(--text);
+}
+.hero-text .subtitle{
+  color:var(--muted);
+  margin-bottom:1.25rem;
+  max-width:60ch;
+}
+.hero-ctas .btn { margin-right:0.6rem }
+
+/* Hero image */
+.hero-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:var(--radius);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  border:1px solid rgba(255,255,255,0.03);
+}
+
+/* Sections */
+.section{
+  padding:3rem 0;
+}
+.section-dark{ background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00)); }
+
+/* Titles */
+.section-title{
+  font-size:1.35rem;
+  margin-bottom:0.6rem;
+  color:var(--text);
+}
+.lead{ color:var(--muted); margin-bottom:1rem; }
+
+/* Features */
+.features{
+  list-style:none;
+  margin-top:1rem;
+  display:flex;
+  gap:1.5rem;
+  flex-wrap:wrap;
+}
+.features li{ color:var(--muted); font-weight:500 }
+
+/* MENU GRID */
+.menu-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap:1.25rem;
+  margin-top:1.5rem;
+}
+
+/* CARD */
+.menu-card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
+  border-radius:12px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  transition: transform 280ms, box-shadow 280ms;
+  border:1px solid rgba(255,255,255,0.03);
+}
+.menu-card:hover{ transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,0.6) }
+
+.menu-img{ width:100%; height:180px; object-fit:cover; display:block; }
+.menu-body{ padding:1rem; display:flex; flex-direction:column; gap:0.65rem; }
+.menu-name{ margin:0; font-size:1.05rem }
+.menu-desc{ color:var(--muted); font-size:0.95rem; margin:0 }
+.menu-meta{ display:flex; justify-content:space-between; align-items:center; margin-top:auto; }
+
+/* GALLERY */
+.gallery-grid{
+  margin-top:1rem;
+  display:grid;
+  gap:0.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.gallery-grid img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,0.03);
+}
+
+/* MAP */
+.map-wrap iframe{
+  width:100%;
+  height:320px;
+  border:0;
+  border-radius:10px;
+  margin-top:1rem;
+}
+
+/* CONTACT */
+.contact-grid{ display:grid; grid-template-columns: 1fr 320px; gap:1.25rem; align-items:start; }
+.contact-card{ background:var(--card); padding:1rem; border-radius:10px; border:1px solid rgba(255,255,255,0.03) }
+
+/* BUTTONS */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:0.5rem;
+  padding:0.6rem 0.9rem;
+  border-radius:10px;
+  font-weight:600;
+  text-decoration:none;
+  border:1px solid transparent;
+  cursor:pointer;
+  transition:var(--transition);
+}
+.btn-primary{
+  background:var(--accent);
+  color:var(--text);
+  box-shadow: 0 6px 18px rgba(107,59,32,0.18);
+}
+.btn-primary:hover{ transform:translateY(-3px) }
+.btn-ghost{
+  background:transparent;
+  color:var(--muted);
+  border:1px solid rgba(255,255,255,0.03);
+}
+.btn-order{
+  background:transparent;
+  color:var(--accent);
+  border:1px solid rgba(139,97,69,0.12);
+  padding:8px 12px;
+  border-radius:8px;
+}
+
+/* FOOTER */
+.footer{
+  border-top:1px solid rgba(255,255,255,0.03);
+  padding:1.2rem 0;
+  margin-top:2rem;
+  color:var(--muted);
+}
+.footer-inner{ display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap }
+
+/* RESPONSIVE */
+@media (max-width: 980px){
+  .hero-grid{ grid-template-columns: 1fr; gap:1.2rem; }
+  .nav-menu{ display:none; }
+  .nav-toggle{ display:block; }
+  .contact-grid{ grid-template-columns: 1fr; }
+}
+
+@media (max-width: 580px){
+  .hero-text .title{ font-size:1.6rem; }
+  .menu-img{ height:150px; }
+  .gallery-grid img{ height:120px; }
+}
+    
+</style>
+
+<script>
+    /* script.js
+   Tugas:
+   - Toggle nav di mobile
+   - Smooth scroll (native-ish)
+   - Tombol Order membuka WhatsApp dengan pesan prefilled
+   - Set tahun di footer
+*/
+
+/* ---------- CONFIG (ubah sesuai kebutuhan) ---------- */
+const WHATSAPP_NUMBER = "6283817540747"; // ganti dengan nomor tujuan (format internasional tanpa +)
+const DEFAULT_WHATSAPP_TEXT = "Halo, saya mau pesan: ";
+
+/* ---------- NAV TOGGLE ---------- */
+const navToggle = document.getElementById('nav-toggle');
+const navMenu   = document.getElementById('nav-menu');
+
+navToggle.addEventListener('click', () => {
+  const expanded = navMenu.style.display === 'flex';
+  navMenu.style.display = expanded ? 'none' : 'flex';
+  if (!expanded) navMenu.style.flexDirection = 'column';
+});
+
+/* ---------- SMOOTH SCROLL for internal links ---------- */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e){
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({behavior: 'smooth', block: 'start'});
+      // close mobile menu after click
+      if (window.innerWidth <= 980 && navMenu.style.display === 'flex') {
+        navMenu.style.display = 'none';
+      }
+    }
+  });
+});
+
+/* ---------- WHATSAPP ORDER BUTTONS ---------- */
+function openWhatsApp(itemName) {
+  const base = `https://wa.me/${WHATSAPP_NUMBER}`;
+  const text = encodeURIComponent(DEFAULT_WHATSAPP_TEXT + itemName);
+  // open in new tab
+  window.open(`${base}?text=${text}`, '_blank');
+}
+
+// Attach to menu order buttons
+document.querySelectorAll('.btn-order').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.dataset.item || 'Pesanan';
+    openWhatsApp(item);
+  });
+});
+
+// Main contact WhatsApp button (without item)
+const whatsappBtn = document.getElementById('whatsapp-button');
+if (whatsappBtn) {
+  whatsappBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const base = `https://wa.me/${WHATSAPP_NUMBER}`;
+    const text = encodeURIComponent("Halo, saya ingin memesan / info lebih lanjut.");
+    window.open(`${base}?text=${text}`, '_blank');
+  });
+}
+
+/* ---------- Footer year ---------- */
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
